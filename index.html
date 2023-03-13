@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Eva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+</head>
+<body>
+
+  <main class="row vw-100 vh-100 overflow-hidden" >        
+    <div id="map" class="col-9 h-100 border"></div>        
+    <div class="col-3 p-1 h-100 scroll">                
+      <ul class="list-group " id ="content">           
+         <template>              
+          <li class="list-group-item p-3">                
+            <h3></h3>               
+            <p></p>
+            <span class="lat badge bg-info" id="direccion"></span></th>               
+            <span class="lat badge bg-info" id="telefono"></span></th>                           
+          </li>            
+          </template>          
+        </ul>        
+      </div>      
+    </main>       
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
